@@ -12,6 +12,7 @@ export const  AddCategory = ( {onNewCategory} ) => {
 
 
     const onSubmit = (event) => {
+  
         event.preventDefault();
 
         if (inputValue.trim().length < 4){
@@ -27,7 +28,7 @@ export const  AddCategory = ( {onNewCategory} ) => {
 
     return ( 
         <>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} aria-label='form'>
 
                 <input
                 type="text"
